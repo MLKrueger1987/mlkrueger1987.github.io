@@ -1,3 +1,8 @@
+---
+layout: guide
+title: "Docker and Nvidia Docker on Ubuntu"
+date: 2019-01-21
+---
 # Setting up Nvidia-Docker and Docker on Ubuntu
 ### The easiest way to get your Nvidia GPU up and running for Machine Learning 
 

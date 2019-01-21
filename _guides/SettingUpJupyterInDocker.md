@@ -1,3 +1,8 @@
+---
+layout: guide
+title: "Using Jupyter inside Docker"
+date: 2019-01-21
+---
 # Setting Up Jupyter Notebook inside a Docker Container
 If
 
