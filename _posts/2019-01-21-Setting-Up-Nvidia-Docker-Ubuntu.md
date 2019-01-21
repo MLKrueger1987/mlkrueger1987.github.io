@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: guides
 title: "Setting up Docker and Nvidia Docker on Ubuntu"
 date: 2019-01-21
 ---
