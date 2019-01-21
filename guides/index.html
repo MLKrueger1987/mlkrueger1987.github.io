@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: default
 title: "mk.Guides"
 ---
 <div class='container'>
@@ -8,5 +8,6 @@ title: "mk.Guides"
 
         {% for guide in site.guides %}
             <li><a href="{{ guide.url }}" title="{{ guide.title }}">{{ guide.title }}</a></li>
-      {% endfor %}
+        {% endfor %}
+    </ul>
 </div>
