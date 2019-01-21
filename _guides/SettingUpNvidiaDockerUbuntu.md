@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: "Docker and Nvidia Docker on Ubuntu"
+title: "Setting up Docker and Nvidia Docker on Ubuntu"
 date: 2019-01-21
 ---
 # Setting up Nvidia-Docker and Docker on Ubuntu
