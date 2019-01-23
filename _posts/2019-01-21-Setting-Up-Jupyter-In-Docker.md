@@ -85,7 +85,7 @@ Once your are at the right line, uncomment it and inside change the value in the
 
 Next, use Control-W to search for `.port`, uncomment the line and enter the port number you used when we started up the container. If you are following this guide exactly, use port 8888.
 
-Finally, use Control-W again and seach for `.open_browser`. Uncomment is needed and set the boolean from `True` to `False`. 
+Finally, use Control-W again and seach for `.open_browser`. Uncomment as needed and set the boolean from `True` to `False`. 
 
 That's it! Lets start up the notebook. 
 
