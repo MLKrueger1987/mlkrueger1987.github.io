@@ -133,6 +133,6 @@ Considering the wisdom of an old testament scripture:
     what has been done will be done again;
     there is nothing new under the sun.'
     - Ecclesiates 1:9
-It's unlikely that you need to completely start from scratch when making a container to server your needs. I, personally, like to do this for simple container so I know what is and is not in my containers. However, there are many containers that have been made to solve common problem or add common functionality and they are shared on docker hub.
+It's unlikely that you need to completely start from scratch when making a container to serve your needs. I, personally, like to do this for simple container so I know what is and is not in my containers. However, there are many containers that have been made to solve common problem or add common functionality and they are shared on docker hub.
 
 Docker Hub, as its name suggest, is similar to GitHub, but just has Docker images that have been shared by the community or Docker itself. Go explore Docker Hub and check out some of the amazing images people have put together to help the community out.
