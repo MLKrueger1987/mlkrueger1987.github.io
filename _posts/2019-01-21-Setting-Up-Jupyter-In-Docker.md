@@ -4,12 +4,35 @@ title: "Using Jupyter inside Docker"
 date: 2019-01-21
 ---
 # Setting Up Jupyter Notebook inside a Docker Container
+Docker is a suprisingly useful tool for data science. As the docker environment is essentially frozen, the host platform can be updated and maintained without breaking the solution running inside a Docker container. 
 
+While offers some great tools for productionizing Data Science and Machine Learning solutions, it can be a bit daunting with most of the setup and maintaince needing to be done on the command line.
+
+This guide will run you through the process to get a Docker container running with a Jupyter Notebook Server running inside of it that you can reach from a web browser outside the container.
+
+## Assumptions:
+This guide was made and tested on a Mac and an Ubuntu system. As a result, the instructions make certain assumptions about your system.
+
+- You have docker installed on your system.
+- You are on mac or linux.
+
+If you do not have Docker installed, you can follow the first half my guide to set up Docker and Nvidia-Docker or head over to the Docker Documentation and follow their instructions.
 
 ## Step 1: Starting Up a Docker Container
-- Expose Port
-- Mount Directory
-- Start Bash
+To get started we are going to spin up a Docker container. We are going to be using the latest version of Ubuntu inside this container. When we start up this container, we will do just a bit of network configuration to allow us to access our Notebook later. Lets get our container running:
+
+```bash
+    docker run -ti -p 8888:8888 ubuntu:latest bash
+```
+Lets explore this command real fast. The `-ti` flag stands for 'terminal interactive' it is basically telling docker that we want a terminal when we start up the container. 
+
+The `-p 8888:8888` flag and numbers are telling docker that we want to listen on a particular port (the `-p`). Specifically, we are telling docker to listen to port 8888 on the host machine and that anything that arrives there should be sent to port 8888 in our docker container. The nubers can be anything you like, however, certain ports are typically reserved for certain service and protocols in networking. So while any number can be used there are a few that may not be the best. To keep it simple, we are using 8888 as that is the default with Jupyter. If you want to use something else keep in mind the `-p` flag has the format `-p <Host Port>:<Container Port>`.
+
+The `ubuntu:latest` section is telling the container we want to our contianer to be running the latest version of Ubuntu. If you wanted a different version you can specify that after the colon. So, if you need Ubuntu 16.04, you would pass `ubuntu:16.04` to the docker command.
+
+Finally, the `bash` option telling Docker that we want bash (a flavor of interactive shell) to be run when the container starts. This is the terminal software that we will interact with while configuring our environment and installing Jupyter.
+
+Running the last command, you have a docker container with the Latest version of Ubuntu running and a terminal open running bash. Now we need to install a few packages inside the container.
 
 
 ## Step 2: Install Packages
