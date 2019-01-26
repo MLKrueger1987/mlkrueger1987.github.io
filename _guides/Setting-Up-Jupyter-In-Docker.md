@@ -2,7 +2,6 @@
 layout: guides
 title: "Setting up Jupyter inside Docker"
 description: "A simple guide to installing, configuring, and starting a Docker containerized Jupyter notebook server."
-backgoundcss:""
 date: 2019-01-21
 ---
 Docker is a suprisingly useful tool for data science. As the docker environment is essentially frozen, the host platform can be updated and maintained without breaking the solution running inside a Docker container. 
@@ -111,9 +110,9 @@ That will allow you to get back into the same container you were using before. I
 ```bash
 docker commit <name> <new_image_name>
 ```
-<name> should be the name you gave the container when you created it or the name of your contianer when you run `docker ps` (note: `docker ps` only shows *running* container, if you need to see stopped containers use the `-a` flag like this: `docker ps -a`).
+< name > should be the name you gave the container when you created it or the name of your contianer when you run `docker ps` (note: `docker ps` only shows *running* container, if you need to see stopped containers use the `-a` flag like this: `docker ps -a`).
 
-<new_image_name> should be the name you would like to use for the new image.
+< new_image_name > should be the name you would like to use for the new image.
 
 So, for me if I named the container `jupyter_server` when I started it, and wanted the new image name to be `jupyter_template`, I would type:
 ```bash
