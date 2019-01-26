@@ -1,2 +1,23 @@
-name: mk.DataScience
+# Site settings
+title: Matthew Krueger
+url: https://mlkrueger1987.github.io
+description: ""
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Matthew Krueger
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/matthewlkrueger/
+  - title: github
+    url: https://github.com/MLKrueger1987
+
+# Build settings
 markdown: kramdown
+permalink: pretty
