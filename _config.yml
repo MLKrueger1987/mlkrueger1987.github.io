@@ -1,7 +1,12 @@
 # Site settings
 title: Matthew Krueger
 url: https://mlkrueger1987.github.io
-description: ""
+description: "Data Scientist and Machine Learning Engineer"
+
+# Defining Collections
+collections:
+  guides:
+    output: true
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -21,3 +26,4 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+

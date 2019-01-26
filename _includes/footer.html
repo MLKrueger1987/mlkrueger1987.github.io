@@ -3,4 +3,13 @@
         <div class="container text-center">
             <p>Copyright &copy; {{ site.footer }} 20{{ site.time | date: '%y' }}</p>
         </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57189667-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-57189667-4');
+        </script>
     </footer>

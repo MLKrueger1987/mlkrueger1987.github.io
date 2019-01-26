@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{% include nav.html %}
+<div class="intro-guide intro-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1 class="brand-heading">{{ page.title }}</h1>
+                <p class="intro-text"><strong>{{ page.description }}</strong><br>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        {{content}}
+    </div>
+</div>
