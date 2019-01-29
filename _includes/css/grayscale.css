@@ -381,3 +381,49 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+.post-intro{
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(/img/header_img.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.post-intro .post-intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.post-intro .post-intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.post{
+    background-color: #808080;
+    color: black;
+}
+
+
+@media(min-width:767px) {
+    .post-intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .post-intro .post-intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .post-intro .post-intro-body .post-intro-text {
+        font-size: 25px;
+        color:"gray";
+    }
+}
+
+
