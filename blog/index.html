@@ -21,7 +21,7 @@ description: "Some of my thoughts on Machine Learning and Data Science."
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 post-body">
         {% for post in site.posts %}
-            <a class="text-center" href="{{guide.url}}">
+            <a class="text-center" href="{{ post.url }}">
                 <h3>{{post.title}}</h3>
             </a>
             <p>{{post.description}}</p>
