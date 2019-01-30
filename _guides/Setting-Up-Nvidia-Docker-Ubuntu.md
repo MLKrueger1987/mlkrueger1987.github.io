@@ -1,6 +1,6 @@
 ---
 layout: guides
-title: "Setting up Docker and Nvidia Docker on Ubuntu"
+title: "The Docker Guide Part 1: Setting up Docker and Nvidia Docker on Ubuntu"
 description: "The easiest way to get your Nvidia GPU up and running for Machine Learning"
 date: 2019-01-21
 ---
@@ -220,6 +220,6 @@ If everything is intalled correctly, you should see the output of nvidia-smi whi
 Great! You now have docker and nvidia-docker installed.
 
 ## Part 2:
-In the second part of the guide we will setup Jupyter notebook inside a docker container and allow you to interact with your notebook inside Docker from your web-browser.
+In the second part of the guide we will setup Jupyter notebook inside a docker container and allow you to interact with your notebook inside Docker from your web-browser. <a href='/guides/Setting-Up-Jupyter-In-Docker/'>Click here for Part 2</a>.
 
 
