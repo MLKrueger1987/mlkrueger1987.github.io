@@ -3,6 +3,7 @@ layout: guides
 title: "The Docker Guide Part 2: Setting up Jupyter inside Docker"
 description: "A simple guide to installing, configuring, and starting a Docker containerized Jupyter notebook server."
 date: 2019-01-22
+headerimg: "docker.png"
 ---
 Docker is a suprisingly useful tool for data science. As the docker environment is essentially frozen, the host platform can be updated and maintained without breaking the solution running inside a Docker container. 
 

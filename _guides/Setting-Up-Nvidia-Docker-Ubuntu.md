@@ -3,6 +3,7 @@ layout: guides
 title: "The Docker Guide Part 1: Setting up Docker and Nvidia Docker on Ubuntu"
 description: "The easiest way to get your Nvidia GPU up and running for Machine Learning"
 date: 2019-01-21
+headerimg: "docker.png"
 ---
 
 Its no secret, utilizing a GPU for training models can save a lot of time. It's

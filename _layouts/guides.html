@@ -3,7 +3,8 @@ layout: default
 ---
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 {% include nav.html %}
-<div class="intro-guide intro-body">
+<div class="post-intro">
+ <div class="post-intro-body">
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -12,6 +13,7 @@ layout: default
             </div>
         </div>
     </div>
+</div>
 </div>
 <div class="post"
 <div class="container">
@@ -22,3 +24,11 @@ layout: default
 </div>
 </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(".post-intro").css("background", "url(/img/{{page.headerimg}}) no-repeat center scroll");
+   $(".post-intro").css("background-size", "cover");
+
+});
+</script>
