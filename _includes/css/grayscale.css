@@ -405,8 +405,9 @@ body {
 }
 
 .post{
-    background-color: #808080;
-    color: black;
+    padding-top: 15px;
+    background-color: #4b4b4b;
+    color: #fff;
 }
 
 
