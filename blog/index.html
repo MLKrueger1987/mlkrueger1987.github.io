@@ -1,15 +1,31 @@
 ---
 layout: default
+title: "Blog"
+description: "Some of my thoughts on Machine Learning and Data Science."
 ---
 {% include nav.html %}
-<div class='container'>
-    <h1>{{page.title}}</h1>
-    <ul class="guides">
-
-        {% for guide in site.posts %}
-            <li>
-              <a href="{{ guide.url }}">{{ guide.title }}</a>
-            </li>
+<div class="post-intro">
+    <div class="post-intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <h1 class="brand-heading">{{ page.title }}</h1>
+                    <p class="intro-text"><strong><i>{{ page.description }}</i></strong><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="post">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 post-body">
+        {% for post in site.posts %}
+            <a class="text-center" href="{{guide.url}}">
+                <h3>{{post.title}}</h3>
+            </a>
+            <p>{{post.description}}</p>
         {% endfor %}
-    </ul>
+        </div>
+    </div>
 </div>
